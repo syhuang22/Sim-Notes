@@ -1,11 +1,14 @@
 import Item from './item';
 
 
-const List = () => {
-    return <div>
-        <Item />
-        <Item />
-        <Item />
+const List = ( {listData} ) => {
+    
+    
+    return <div className='list'>
+        {
+            listData.map(item => <Item />)
+        }
+        
     </div>
 }
 
