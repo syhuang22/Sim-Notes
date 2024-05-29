@@ -7,10 +7,10 @@ import './index.css'
 const Home = () => {
 
     const [data, setData] = useState([])
-    
+
     return <div className = "app">
         <Edit add={setData} />
-        <List listData={data} />
+        <List listData={data} deleteData={setData}/>
     </div>
 }
 
