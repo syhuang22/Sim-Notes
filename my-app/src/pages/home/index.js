@@ -6,10 +6,11 @@ import './index.css'
 
 const Home = () => {
 
-    const [data, setData] = useState([1,2,3])
+    const [data, setData] = useState([])
+    
     return <div className = "app">
-        <Edit />
-        <List listData={data}/>
+        <Edit add={setData} />
+        <List listData={data} />
     </div>
 }
 

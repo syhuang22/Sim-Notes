@@ -1,4 +1,10 @@
-const Edit = () => {
+const Edit = ( { add } ) => {
+
+    function addItem() {
+        add([1,2,3])
+    }
+
+
     return <div>
         <h1>Notes</h1>
         <p>Event</p>
@@ -7,7 +13,7 @@ const Edit = () => {
         <input type = "date"/>
         <p>Time</p>
         <input type = "time"/>
-        <button className = "add">Add</button>
+        <button onClick={addItem} className = "add">Add</button>
     </div>
 }
 
